@@ -3680,7 +3680,7 @@ img.mfp-img {
 
 	.controlls-over .owl-controls .owl-prev {
 		position: absolute;
-		top: 50%;
+		top: 10%;
 		margin-top: -28px;
 		right:auto;
 		left: -13px;
@@ -3691,7 +3691,7 @@ img.mfp-img {
 	}
 	.controlls-over .owl-controls .owl-next {
 		position: absolute;
-		top: 50%;
+		top: 10%;
 		margin-top: -28px;
 		left:auto;
 		right: -13px;
@@ -12059,8 +12059,8 @@ div.testimonial p {
 }
 
 div.testimonial>figure>img {
-	width:65px;
-	height:65px;
+	width:150px;
+	height:150px;
 
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
