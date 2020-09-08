@@ -1,11 +1,8 @@
 jQuery(document).ready(function() {
 	var revapi;
 
-
-
 	// Make Content Visible
 	jQuery(".fullwidthbanner ul , .fullscreenbanner ul").removeClass('hide');
-
 
 	/**
 		@HALFSCREEN SLIDER
@@ -116,7 +113,6 @@ jQuery(document).ready(function() {
 		jQuery("#is_wide, #is_boxed").bind("click", function() { revapi.revredraw(); });
 	}
 
-
 	/**
 		@FULLSCREEN SLIDER
 	**/
@@ -134,7 +130,7 @@ jQuery(document).ready(function() {
 			if(tpj('.fullscreenbanner').revolution != undefined) {
 				revapi25 = tpj('.fullscreenbanner').show().revolution({
 					dottedOverlay:"none",
-					delay:9000,
+					delay:7000,
 					startwidth:1200,
 					startheight:700,
 					hideThumbs:10,
@@ -203,9 +199,7 @@ jQuery(document).ready(function() {
 
 			}
 		});	//ready
-
 	}
-
 
 	/**
 		@KEN BURNS
@@ -214,7 +208,7 @@ jQuery(document).ready(function() {
 
 		revapi = jQuery('.fullwidthbanner').revolution({
 			dottedOverlay:"none",
-			delay:9000,
+			delay:7000,
 			startwidth:1170,
 			startheight:400,
 			hideThumbs:200,
@@ -252,7 +246,6 @@ jQuery(document).ready(function() {
 			stopLoop:"off",
 			stopAfterLoops:-1,
 			stopAtSlide:-1,
-
 			
 			shuffle:"off",
 			
@@ -273,7 +266,6 @@ jQuery(document).ready(function() {
 
 		// Used by styleswitcher only - delete this on production!
 		jQuery("#is_wide, #is_boxed").bind("click", function() { revapi.revredraw(); });
-
 	}
 
 });	//ready
