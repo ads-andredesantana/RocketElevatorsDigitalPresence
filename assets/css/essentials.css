@@ -293,7 +293,7 @@ h2 {
 h3 {
 	font-size: 24px;
 	letter-spacing: normal;
-	margin: 0 0 32px 0;
+	margin: 32px 0 32px 0;
 }
 
 h4 {
@@ -13678,8 +13678,9 @@ select.form-control:not([size]):not([multiple]) {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAMAAADNLv/0AAAANlBMVEUAAAD///+ZmZmfoqiaoKydo6ueo6ucpKqdo6qdoqqeoqqdo6qdoqqdo6qco6mdo6qcoqmdo6rJSltEAAAAEHRSTlMAAQVSU5Wmrbe+1NXf5f7+fUgvXAAAAC5JREFUeNodxkkCABAMBMEhiDX4/2fJ9KULLYHlhW5C3YIwvikgThOK3kcddPU9JQ4BFWtk/ScAAAAASUVORK5CYII=) no-repeat;
     background-color: #fff;
     color:#a3a9b0;
-
-    background-position: center right 15px;
+	text-align-last: center;
+	background-position: center right 15px;
+	
 }
 
 

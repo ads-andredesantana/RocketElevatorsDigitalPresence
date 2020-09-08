@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rocket Elevators</title>
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<body class="smoothscroll enable-animation">
+		<!-- wrapper -->
+		<div id="wrapper">
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets\images\r2.png" alt=""/>
+						</a>
+
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="index.html">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<li class="dropdown">
+											<a class="dropdown-toggle" href="index.html">
+											  SERVICES
+											</a>
+											<ul class="dropdown-menu">
+											  <li class="dropdown">
+												<a class="dropdown-toggle" href="index-residential.html">
+												  RESIDENTIAL
+												</a>
+											  </li>
+											  <li class="dropdown">
+												<a class="dropdown-toggle" href="index-commercial.html">
+												  CORPORATE/COMMERCIAL 
+												</a>
+											  </li>
+											  </li>
+											  </ul>
+										  <li>
+									<li><!-- WORK -->
+										<a href="#work">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+			<!-- PAGE HEADER -->	
+			<section class="page-header page-header-lg parallax parallax-3" style="background-image:url('demo_files/images/vision-min.jpg')">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="container text-center" >
+					<h1>Quote Request Form</h1>
+				</div>
+			</section>
+			<!-- /PAGE HEADER -->		
+
+			<hr class="m-0" /><!-- 1px line separator -->
+			
+			<!-- Services -->
+			<section id="services">
+				<div class="container">
+
+					<div class="heading-title text-center">
+						<div class="col-sm-12">
+								<!-- <img class="img-fluid" src="demo_files/images/thematics/elevator/res-min.jpg" alt="img" /> -->
+							<h3 class="mt-10">Type of Building</h3> <br>
+							<p>Please select the type of building to obtain an estimate</p> <br>
+							<div class="text-center">
+								<select class="form-control pointer" name="contact[department]">
+									<option value="">--- Select ---</option>
+									<option value=">Residential">Residential</option>
+									<option value="Commecial">Commecial</option>
+									<option value="Corporate">Corporate</option>
+									<option value="Hybrid">Hybrid</option>
+								</select>
+							</div>
+						</div>						
+					</div>
+
+				</div>
+			</section>
+			<!-- /Services -->
+
+			<!-- FORM -->
+			<div class="container">
+
+				<div class="col-md-12 col-sm-12"></br>
+
+					<div class="heading-title text-center">
+						<h1>Please Fill the Form</h2> </br>
+					</div>
+
+					<!-- Alert Success -->
+					<div id="alert_success" class="alert alert-success mb-30">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<strong>Thank You!</strong> Your message successfully sent!
+					</div><!-- /Alert Success -->
+
+					<!-- Alert Failed -->
+					<div id="alert_failed" class="alert alert-danger mb-30">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<strong>[SMTP] Error!</strong> Internal server error!
+					</div><!-- /Alert Failed -->
+
+					<!-- Alert Mandatory -->
+					<div id="alert_mandatory" class="alert alert-danger mb-30">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+					</div><!-- /Alert Mandatory -->
+
+					<form action="php/contact.php" method="post" enctype="multipart/form-data">
+						<fieldset>
+							<input type="hidden" name="action" value="contact_send" />
+
+							<div class="row">
+									<div class="col-md-8">
+										<label for="contact:name">Full Name *</label>
+										<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+									</div>
+									<div class="col-md-4">
+										<label for="contact:name">Business Name *</label>
+										<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+									</div>
+									<div class="col-md-8">
+										<label for="contact:email">E-mail *</label>
+										<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
+									</div> 
+									<div class="col-md-4">
+										<label for="contact:phone">Phone Number</label>
+										<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
+									</div>
+							</div>
+							<div class="row">
+									<div class="col-md-8">
+										<label for="contact:subject">Project Name *</label>
+										<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
+									</div>
+									<div class="col-md-4">
+										<label for="contact_department">Department</label>
+										<select class="form-control pointer" name="contact[department]">
+											<option value="">--- Select ---</option>
+											<option value="Sales">Sales</option>
+											<option value="Marketing">Marketing</option>
+											<option value="Engineering">Engineering</option>
+										</select>
+									</div>
+									<div class="col-md-12">
+										<label for="contact:subject">Project Description *</label>
+										<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
+									</div>
+							</div>
+							<div class="row">
+									<div class="col-md-12">
+										<label for="contact:message">Message *</label>
+										<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
+									</div>
+							</div>
+							<div class="row">
+									<div class="col-md-12">
+										<label for="contact:attachment">File Attachment</label>
+
+										<!-- custom file upload -->
+										<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
+										<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
+									</div>
+							</div>
+
+						</fieldset>
+
+						<div class="row">
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND MESSAGE</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>	
+			<!-- /FORM -->
+
+			<!-- CONTACT -->
+			<section id="contact">
+				<div class="container">
+
+					<header class="text-center mb-60"> 
+						<div class="col-md-12 col-sm-12">
+			  				<div id="map2" class="h-400"><iframe width="1000" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+							src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=4468%20Wellington%20St,%20Suite%20204%20Verdun+(Rocket%20Elevators)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.add-map.net/'>add google map to website</a> <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=58fb0d8e6d212e016ffebc34e3382e165afaed2d'></script></div>
+						  <br>
+						<div class="col-md-12 col-sm-12">
+							<p>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468 Wellington St Suite 204, Verdun, Quebec H4G 1W5</span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">(581) 701-0303</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">info@codeboxx.biz</a></span>
+							</p>
+						</div>
+					</header>
+
+					<div class="row">
+
+						<!-- INFO -->
+						<div class="col-md-4 col-sm-4">
+						<!-- /INFO -->
+
+					</div>
+				</div>
+			</section>
+			<!-- /CONTACT -->
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+							<h2 class="letter-spacing-1">Looking for a rewarding career?</h2>
+
+							<!-- Small Description -->
+							<p>
+								If you are looking for a rewarding, meaningful career, send us your CV!!! 
+								<h3 class="letter-spacing-1">Follow us on social media!</h3> 
+							</p>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-primary" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+						</div>
+						<!-- /col #2 -->
+						<ul class="float-right m-0 list-inline mobile-block">	
+							<li><a href="https://www.facebook.com" title="Facebook" target="_new"><img src="assets/images/icons8-facebook-48.png" alt="Facebook" title="Facebook" height="24px" width="24px"></a></li>
+							<li><a href="https://twitter.com" title="Twitter" target="_new"><img src="assets/images/icons8-twitter-squared-120.png" alt="Twitter" title="Twitter" height="34px" width="34px"></a></li>
+							<li><a href="https://www.instagram.com" title="Instagram" target="_new"><img src="assets/images/icons8-instagram-24.png" alt="Instagram" height="34px" width="34px"></a></li>
+							<li><a href="https://www.linkedin.com" title="LinkedIn" target="_new"><img src="assets/images/icons8-linkedin-2-32.png" alt="LinkedIn" height="34px" width="34px"></a></li>
+							</ul>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						&copy; All Rights Reserved, Rocket Elevators inc.
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+
+		<!-- REVOLUTION SLIDER -->
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="assets/js/view/demo.revolution_slider.js"></script>
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script src="assets/js/contact.js"></script>
+
+		<!-- 
+			GMAP.JS 
+			http://hpneo.github.io/gmaps/
+		-->
+		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
+		<script src="assets/plugins/gmaps.js"></script>
+		<script>
+
+ 		 </script>
+	</body>
+</html>

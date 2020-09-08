@@ -58,7 +58,7 @@ html, body {
 	direction: ltr;
 }
 body {
-	color:#666;
+	color:rgb(5, 5, 5);
 	background-color:#fff;
 	font-family:'Open Sans',Arial,Helvetica,sans-serif;
 	-webkit-font-smoothing: antialiased;
