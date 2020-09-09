@@ -56,7 +56,7 @@
 									</li>
 									<li><!-- SERVICES -->
 										<li class="dropdown">
-											<a class="dropdown-toggle" href="index.html">
+											<a class="dropdown-toggle">
 											  SERVICES
 											</a>
 											<ul class="dropdown-menu">
@@ -73,7 +73,8 @@
 											  </li>
 											  </ul>
 										  <li>
-									<li><!-- WORK -->
+										<li>
+										<!-- WORK -->
 										<a href="#work">
 											PORTFOLIO
 										</a>
@@ -112,7 +113,39 @@
 			</section>
 			<!-- /PAGE HEADER -->		
 
-			<hr class="m-0" /><!-- 1px line separator -->
+			<hr class="m-0" /><!-- 1px line separator --> <br>
+
+			<div class="row process-wizard process-wizard-default">
+
+				<div class="col-3 process-wizard-step complete">
+					<div class="text-center process-wizard-stepnum">Step 1</div>
+					<div class="progress"><div class="progress-bar"></div></div>
+					<a href="#services" class="process-wizard-dot"></a>
+					<div class="process-wizard-info text-center">Choose the Type of Building</div>
+				</div>
+			
+				<div class="col-3 process-wizard-step active"><!-- complete -->
+					<div class="text-center process-wizard-stepnum">Step 2</div>
+					<div class="progress"><div class="progress-bar"></div></div>
+					<a href="#services" class="process-wizard-dot"></a>
+					<div class="process-wizard-info text-center">Fill the Information to Get a Quote</div>
+				</div>
+			
+				<div class="col-3 process-wizard-step disabled"><!-- complete -->
+					<div class="text-center process-wizard-stepnum">Step 3</div>
+					<div class="progress"><div class="progress-bar"></div></div>
+					<a href="#" class="process-wizard-dot"></a>
+					<div class="process-wizard-info text-center">Send the Form to Rocket Elevator's Sales Team</div>
+				</div>
+			
+				<div class="col-3 process-wizard-step disabled"><!-- active -->
+					<div class="text-center process-wizard-stepnum">Step 4</div>
+					<div class="progress"><div class="progress-bar"></div></div>
+					<a href="#" class="process-wizard-dot"></a>
+					<div class="process-wizard-info text-center">Start the Project after Reviewing the Details with our <br> Engineering Team</div>
+				</div>
+			
+			</div>		
 			
 			<!-- Services -->
 			<section id="services">
@@ -122,7 +155,7 @@
 						<div class="col-sm-12">
 								<!-- <img class="img-fluid" src="demo_files/images/thematics/elevator/res-min.jpg" alt="img" /> -->
 							<h3 class="mt-10">Type of Building</h3> <br>
-							<p>Please select the type of building to obtain an estimate</p> <br>
+							<p>Please select the type of building to obtain an estimate</p><br>
 							<div class="text-center">
 								<select class="form-control pointer" name="contact[department]">
 									<option value="">--- Select ---</option>
