@@ -3,6 +3,19 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Commercial Services</title>
+		<meta name="Author" content="André De Santana"/>	
+		
+		<!-- rocket elevator icon -->
+		<link rel="icon" type="image/png" href="assets/images/rocket_elevator/re-favicon.png">		
+
+		<!-- Adding automatic header/footer -->
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+		<script>
+			$(function () {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+			});
+		</script>
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
@@ -23,90 +36,20 @@
 		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
 	</head>
 
-	<!--
-		BODY 
-	-->
+	<!-- BODY -->
 	<body class="smoothscroll enable-animation">
 
 		<!-- wrapper -->
 		<div id="wrapper">
 
-			<!-- 
-				HEADER 
-			-->
-			<div id="header" class="navbar-toggleable-md sticky clearfix">
+			<!-- HEADER -->
+			<div id="header" class="navbar-toggleable-md sticky clearfix"></div>
 
-				<!-- TOP NAV -->
-				<header id="topNav">
-					<div class="container">
-
-						<!-- Mobile Menu Button -->
-						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-							<i class="fa fa-bars"></i>
-						</button>
-
-						<!-- Logo -->
-						<a class="logo float-left scrollTo" href="#top">
-							<img src="assets\images\r2.png" alt=""/>
-						</a>
-
-						<!-- 
-							Top Nav 
-						-->
-						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
-							<nav class="nav-main">
-
-								<!-- 
-									.nav-onepage
-									Required for onepage navigation links
-									
-									Add .external for an external link!
-								-->
-								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li class="active"><!-- HOME -->
-										<a href="index.html">
-											HOME
-										</a>
-									</li>
-									<li><!-- SERVICES -->								
-										<a class="dropdown-toggle" href="#services">SERVICES</a>
-										<ul class="dropdown-menu white-space=nowrap">
-											<li><a href="index_residential.html">Residential</a></li>
-											<li><a href="index_commercial.html">Corporate</a></li>
-											<li><a href="quotation.html">Get a Quote</a></li>
-										</ul>
-									</li>
-										<!-- WORK -->
-										<a href= "index.html#work">
-											PORTFOLIO
-										</a>
-									</li>
-									<li><!-- NEWS -->
-										<a href="index.html#news">
-											NEWS
-										</a>
-									</li>
-									<li><!-- CLIENTS -->
-										<a href="index.html#clients">
-											CLIENTS
-										</a>
-									</li>
-									<li><!-- CONTACT -->
-										<a href="index.html#contact">
-											CONTACT
-										</a>
-									</li>
-								</ul>
-
-							</nav>
-						</div>
-
-					</div>
-				</header>
-				<!-- /Top Nav -->
-
-			</div>
-
+			<!-- Block Level Button -->
+			<a href="quotation.html" class="btn btn-danger btn-lg btn-red btn-block">
+				<span>GET A QUOTE</span>
+			</a>
+			<!-- /Block Level Button -->
 			<!-- -->
 			<section>
 				<div class="container">
@@ -132,15 +75,7 @@
 							</div> </br></br>
 							<!-- /OWL SLIDER -->
 						</div> 
-
-			<!-- BUTTON CALLOUT -->
-			<a href="quotation.html" class="btn btn-lg btn-danger fs-20 fullwidth m-0 rad-0 p-40">
-				<span class="font-lato fs-30">
-					<strong>CLICK HERE FOR AN ONLINE QUOTE!</strong>
-				</span>
-			</a>
-			<!-- /BUTTON CALLOUT -->	
-
+						
 						<div class="col-md-12">
 							<h3 class = "text-center"><strong>Advanced Technology</strong></h3>
 							<p class = "text-center">Our smart mobility system offers personalized service and access control through the exclusive <strong> Rocket Elevator App</strong> for an unmatched performance in new and existing buildings.</p>
@@ -207,6 +142,12 @@
 				</div>
 			</section>
 			<!-- / -->
+
+				<!-- Block Level Button -->
+				<a href="quotation.html" class="btn btn-danger btn-lg btn-red btn-block">
+					<span>GET A QUOTE</span>
+				</a>
+				<!-- /Block Level Button -->
 
 			<!-- CALLOUT -->
 			<section class="callout-dark heading-title heading-arrow-bottom" style="background-image: url('rocket_elev_files/images/wall3-min.jpg');">
@@ -303,48 +244,54 @@
 						</div>
 						<!-- /skills -->
 
-						<!-- recent news -->
+						<!-- Recent News -->
 						<div class="col-md-4 col-sm-4">
 							<h4>Recent News</h4>
 
-							<div class="row tab-post"><!-- post -->
+							<!-- Post 1 -->
+							<div class="row tab-post">
 								<div class="col-md-2 col-sm-2 col-2">
-									<a href="blog-single-default4.html" target="_new">
-										<img src="rocket_elev_files/images/people/300x300/facts.jpg" width="50" alt="" />
+									<a href="news_press1.html" target="_new">
+										<img src="rocket_elev_files/images/blog/1-min.jpg" width="50" alt="" />
 									</a>
 								</div>
 								<div class="col-md-10 col-sm-10 col-10">
-									<a href="blog-single-default4.html" target="_new" class="tab-post-link">Interesting Facts You Might Not Know About Elevators</a>
-									<small>August 15th, 2020</small>
+									<a href="news_press1.html" target="_new" class="tab-post-link">Rocket Elevators achieve ISO 9001:2015 Certification</a>
+									<small>June 29, 2020</small>
 								</div>
-							</div><!-- /post -->
+							</div>
+							<!-- /Post 1-->
 
-							<div class="row tab-post"><!-- post -->
+							<!-- Post 2 -->
+							<div class="row tab-post">
 								<div class="col-md-2 col-sm-2 col-2">
-									<a href="blog-single-default1.html" target="_new">
+									<a href="news_press2.html" target="_new">
 										<img src="rocket_elev_files/images/people/300x300/forbes.png" width="50" alt="" />
 									</a>
 								</div>
 								<div class="col-md-10 col-sm-10 col-10">
-									<a href="blog-single-default1.html" target="_new" class="tab-post-link">Rocket Elevators again in the 1st place!</a>
+									<a href="news_press2.html" target="_new" class="tab-post-link">Rocket Elevators again in the 1st place!</a>
 									<small>Jan 28, 2020</small>
 								</div>
-							</div><!-- /post -->
+							</div>
+							<!-- /Post 2 -->
 
-							<div class="row tab-post"><!-- post -->
+							<!-- Post 3 -->							
+							<div class="row tab-post">
 								<div class="col-md-2 col-sm-2 col-2">
-									<a href="blog-single-default5.html" target="_new">
-										<img src="rocket_elev_files/images/people/300x300/Safety-manager.jpg" width="50" alt="" />
+									<a href="news_press4.html" target="_new">
+										<img src="rocket_elev_files/images/blog/4-min.jpg" width="50" alt="" />
 									</a>
 								</div>
 								<div class="col-md-10 col-sm-10 col-10">
-									<a href="blog-single-default5.html" target="_new" class="tab-post-link">Who Is The Authority Having Jurisdiction (Elevator Safety Authority) In Your Area?</a>
-									<small>Apr 1st, 2020</small>
+									<a href="news_press4.html" target="_new" class="tab-post-link">Innovations and New Technology in Elevators</a>
+									<small>Feb 10, 2020</small>
 								</div>
-							</div><!-- /post -->
+							</div>
+							<!-- /Post 3-->
 
 						</div>
-						<!-- /recent news -->
+						<!-- /Recent News -->
 
 					</div>
 
@@ -421,80 +368,20 @@
 					<strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">(581) 701-0303</a></span> <br>
 					<strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">info@codeboxx.biz</a></span> <br>
 
-					<div class="col-md-12 col-sm-12">	
-						<a href="quotation.html" class="btn btn-danger btn-lg">
-							<span class="font-lato fs-20">
-								<strong>CLICK HERE FOR AN ONLINE QUOTE!</strong>
-							</span>
-						</a> 
-					</div> 	
-
 				</div>
 			</header>
 
 			</section>
 			<!-- /CALLOUT -->
 
+				<!-- Block Level Button -->
+				<a href="quotation.html" class="btn btn-danger btn-lg btn-red btn-block">
+					<span>GET A QUOTE</span>
+				</a>
+				<!-- /Block Level Button -->
+
 			<!-- FOOTER -->
-			<footer id="footer">
-				<div class="container">
-
-
-					<div class="row">
-
-						<!-- col #1 -->
-						<div class="col-md-8">
-
-							<h2 class="letter-spacing-1">Looking for a rewarding career?</h2>
-
-							<!-- Small Description -->
-							<p>
-								If you are looking for a rewarding, meaningful career, send us your CV!!! 
-								<h3 class="letter-spacing-1">Follow us on social media!</h3> 
-
-							</p>
-						</div>
-						<!-- /col #1 -->
-
-						<!-- col #2 -->
-						<div class="col-md-4">
-							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-							<!-- Newsletter Form -->
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-primary" type="submit">Subscribe</button>
-									</span>
-								</div>
-							</form>
-							<!-- /Newsletter Form -->
-
-
-						</div>
-						<!-- /col #2 -->
-						<ul class="float-right m-0 list-inline mobile-block">	
-							<li><a href="https://www.facebook.com" title="Facebook" target="_new"><img src="assets/images/icons8-facebook-48.png" alt="Facebook" title="Facebook" height="24px" width="24px"></a></li>
-							<li><a href="https://twitter.com" title="Twitter" target="_new"><img src="assets/images/icons8-twitter-squared-120.png" alt="Twitter" title="Twitter" height="34px" width="34px"></a></li>
-							<li><a href="https://www.instagram.com" title="Instagram" target="_new"><img src="assets/images/icons8-instagram-24.png" alt="Instagram" height="34px" width="34px"></a></li>
-							<li><a href="https://www.linkedin.com" title="LinkedIn" target="_new"><img src="assets/images/icons8-linkedin-2-32.png" alt="LinkedIn" height="34px" width="34px"></a></li>
-							</ul>
-					</div>
-
-				</div>
-
-				<div class="copyright">
-					<div class="container">
-						&copy; All Rights Reserved, Rocket Elevators inc.
-					</div>
-				</div>
-
-			</footer>
-			<!-- /FOOTER -->
+			<footer id="footer"></footer></div>
 
 		</div>
 		<!-- /wrapper -->
@@ -526,10 +413,7 @@
 		<!-- PAGELEVEL SCRIPTS -->
 		<script src="assets/js/contact.js"></script>
 
-		<!-- 
-			GMAP.JS 
-			http://hpneo.github.io/gmaps/
-		-->
+		
 		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
 		<script src="assets/plugins/gmaps.js"></script>
 		<script>
