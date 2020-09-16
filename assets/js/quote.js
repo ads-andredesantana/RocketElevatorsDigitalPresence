@@ -14,44 +14,15 @@ function init() {
                
     // Radio Buttons Hide/Show Unit Prices
     $(document).ready(function(){
-        $('.box').hide();
-        $('input[type="radio"]').click(function(){
+        $(".box").hide();
+        $('input[type="radio"]').click(function() {
             var inputValue = $(this).attr("value");
             var targetBox = $("." + inputValue);
             $(".box").not(targetBox).hide();
             $(targetBox).show();
         });
     });
-// document.getElementById('numElevReq').textContent = '0';
-// document.getElementById('priceElev').textContent = '0';
-// document.getElementById('estCostInst').textContent = '0';
-// document.getElementById('est_Bud').textContent = '0';
 };
-
-
-// function restart() {
-
-// var num_Elev_Req = 0;
-// var price_Inst = 0;
-// var tot_Price = 0;
-// $("#numElevReq").text(num_Elev_Req);
-// $("#feeCost").text(formatter.format(price_Inst));
-// $("#calculatedTotalPrice").text(formatter.format(tot_Price));	
-
-// };
-
-// restart($("#select_option").each (function(){
-//     this.reset();
-// }));
-
-
-
-// var res = function() {
-//     document.getElementById('numElevReq').reset();
-//     document.getElementById('priceElev').reset();
-//     document.getElementById('estCostInst').reset();
-//     document.getElementById('est_Bud').reset();
-// }
 
 // ----------------------------------------------------------------------------------------------------------------
 // Global Variables
