@@ -1,27 +1,85 @@
-// function init() {
-init(); 
+// Declaring the global variables
+
+var nb_apart,           //Number of apartments
+  nb_floors,            //Number of floors
+  nb_basements,         //Number of basements
+  nb_bus,               //Number of of distinct businesses
+  nb_pkg,               //Number of parking space available
+  nb_elev_deployed,     //Number of elevator cages to be deployed
+  nb_sep_ten_comp,      //Number of separate tenant companies
+  max_num_occ_flr,      //Maximum number of occupants per floor
+  num_hours_activity,   //Number of hours of activity of the building
+  num_cages,            //Number of cages
+  num_elevators;        //Number of elevators
+
+init();
 
 function init() {
-    // Select Form Type
-    $(document).ready(function() {
-        $('div.building_type').hide();      
-        $('#select_option').on('change', function () {           
-            var selected = $(this).val();
-            $('div.building_type').hide();
-            $('#show'+selected).show();
-        });
+  // nb_apart = 0;
+  // nb_floors = 0;
+  // nb_basements = 0;
+  // nb_bus = 0;
+  // nb_pkg = 0;
+  // nb_elev_deployed = 0;
+  // nb_sep_ten_comp = 0;
+  // max_num_occ_flr = 0;
+  // num_hours_activity = 0;
+  // num_cages = 0;
+  // num_elevators = 0;
+
+  $(document).ready(function() {
+    $('div.building_type').hide();      
+    $('#select_option').on('change', function () {           
+        var selected = $(this).val();
+        $('div.building_type').hide();
+        $('#show'+selected).show();
     });
-               
-    // Radio Buttons Hide/Show Unit Prices
-    $(document).ready(function(){
-        $(".box").hide();
-        $('input[type="radio"]').click(function() {
-            var inputValue = $(this).attr("value");
-            var targetBox = $("." + inputValue);
-            $(".box").not(targetBox).hide();
-            $(targetBox).show();
-        });
+  });
+
+  // Radio Buttons Hide/Show Unit Prices
+  $(document).ready(function () {
+    $(".box").hide();
+    $('input[type="radio"]').click(function () {
+      var inputValue = $(this).attr("value");
+      var targetBox = $("." + inputValue);
+      $(".box").not(targetBox).hide();
+      $(targetBox).show();
     });
+  });
+
+};
+
+// ----------------------------------------------------------------------------------------------------------------
+// Function to clear values of the form
+
+clear_Func = function() {
+  
+  // Restarting the Number of Elevators Required
+  var numApartRes_restart = parseInt($("#numElevReq").val()); 
+  numApartRes_restart = 0;
+  $("#numElevReq").text(numApartRes_restart);
+
+  // Restarting the Price of the Equipments
+  var priceElev_restart = parseInt($("#priceElev").val());  
+  priceElev_restart = 0;
+  $("#priceElev").text(formatter.format(priceElev_restart));
+
+  // Restarting the Estimated Cost of Installation
+  var estCostInst_restart = parseInt($("#estCostInst").val());  
+  estCostInst_restart = 0;
+  $("#estCostInst").text(formatter.format(estCostInst_restart));
+
+  // Restarting the Estimated Budget
+  var est_Bud_restart = parseInt($("#est_Bud").val());  
+  est_Bud_restart = 0;
+  $("#est_Bud").text(formatter.format(est_Bud_restart));
+
+  // Restarting the Form Type Selection
+  var dropDown = document.getElementById("select_option");
+  dropDown.selectedIndex = 0;
+
+  // Restarting the radio buttons
+  $('input[name="product_line"]').prop('checked', false);
 };
 
 // ----------------------------------------------------------------------------------------------------------------
@@ -52,6 +110,8 @@ const excl_Fee = 16;
 // ---------------------------------------------------------------------------------------------------------------
 
 var numElevRes = function() {
+
+
 
     // Getting the input and storing in a variable
     var num_apart_res = parseInt($("#numApRes").val());         // Number of Apartments
@@ -100,6 +160,7 @@ var numElevCom = function () {
     cages = elevators;
 
     // Putting the result in a variable to do the calculation  
+    
     $("#numElevReq").text(cages);
     num_Elev_Req = elevators;
     };

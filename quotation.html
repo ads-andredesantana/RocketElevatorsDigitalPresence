@@ -1,128 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rocket Elevators</title>
+		<meta name="Author" content="André De Santana"/>
 
-<head>
-	<meta charset="utf-8" />
-	<title>Rocket Elevators - Quotation</title>
-	<meta name="Initial Home Page of Rocket Elevator" content="André De Santana" />
-	<meta name="Author" content="André De Santana" />
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
-	<!-- rocket elevator icon -->
-	<link rel="icon" type="image/png" href="assets/images/rocket_elevator/re-favicon.png">
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" rel="stylesheet" type="text/css" />
 
-	<!-- Adding automatic header/footer -->
-	<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
-	<script>
-		$(function () {
-			$("#header").load("header.html");
-			$("#footer").load("footer.html");
-		});
-	</script>
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-	<!-- mobile settings -->
-	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
-	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
 
-	<!-- WEB FONTS : use %7C instead of | (pipe) -->
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" rel="stylesheet"
-		type="text/css" />
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
 
-	<!-- CORE CSS -->
-	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
 
-	<!-- REVOLUTION SLIDER -->
-	<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-	<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+	<body class="smoothscroll enable-animation bg-grey">
+		<!-- wrapper -->
+		<div id="wrapper">
 
-	<!-- THEME CSS -->
-	<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
-	<!-- PAGE LEVEL SCRIPTS -->
-	<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
-</head>
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
 
-<!-- Body -->
-<body class="smoothscroll enable-animation bg-grey">
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
 
-	<!-- wrapper -->
-	<div id="wrapper">
-		
-		<!--HEADER-->
-		<div id="header" class="navbar-toggleable-md sticky header-md clearfix"></div>
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets\images\r2.png" alt=""/>
+						</a>
 
-		<!-- PAGE HEADER -->
-		<section class="page-header page-header-lg parallax parallax-3"
-			style="background-image:url('rocket_elev_files/images/vision-min.jpg')">
-			<div class="overlay dark-5">
-				<!-- dark overlay [1 to 9 opacity] -->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="index.html">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->								
+										<a class="dropdown-toggle" href="#services">SERVICES</a>
+										<ul class="dropdown-menu white-space=nowrap">
+											<li><a href="index_residential.html">Residential</a></li>
+											<li><a href="index_commercial.html">Corporate</a></li>
+											<li><a href="quotation.html">Get a Quote</a></li>
+										</ul>
+									</li>
+										<!-- WORK -->
+										<a href= "index.html#work">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="index.html#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="index.html#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="index.html#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
 			</div>
-			<div class="container text-center">
-				<h1>Quote Request Form</h1>
-			</div>
-		</section>
-		<!-- /PAGE HEADER -->
 
-		<hr class="m-0" /><!-- 1px line separator --> <br>
+			<!-- PAGE HEADER -->	
+			<section class="page-header page-header-lg parallax parallax-3" style="background-image:url('rocket_elev_files/images/vision-min.jpg')">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
 
-		<!-- STEPS -->
-		<div class="container">
-			<div class="row process-wizard process-wizard-default">
-				<div class="col-3 process-wizard-step complete">
-					<div class="text-center process-wizard-stepnum">Step 1</div>
-					<div class="progress">
-						<div class="progress-bar"></div>
-					</div>
-					<a href="#type_build" class="process-wizard-dot"></a>
-					<div class="process-wizard-info text-center">Choose the Type of Building</div>
+				<div class="container text-center">
+					<h1>Quote Request Form</h1>
 				</div>
+			</section>
+			<!-- /PAGE HEADER -->		
 
-				<div class="col-3 process-wizard-step complete">
-					<!-- complete -->
-					<div class="text-center process-wizard-stepnum">Step 2</div>
-					<div class="progress">
-						<div class="progress-bar"></div>
+			<hr class="m-0" /><!-- 1px line separator --> <br>
+
+			<!-- STEPS -->			
+			<div class="container">
+				<div class="row process-wizard process-wizard-default">
+					<div class="col-3 process-wizard-step complete">
+						<div class="text-center process-wizard-stepnum">Step 1</div>
+						<div class="progress"><div class="progress-bar"></div></div>
+						<a href="#type_build" class="process-wizard-dot"></a>
+						<div class="process-wizard-info text-center">Choose the Type of Building</div>
 					</div>
-					<a href="#quote" class="process-wizard-dot"></a>
-					<div class="process-wizard-info text-center">Fill the Information to Get a Quote</div>
-				</div>
-
-				<div class="col-3 process-wizard-step complete">
-					<!-- complete -->
-					<div class="text-center process-wizard-stepnum">Step 3</div>
-					<div class="progress">
-						<div class="progress-bar"></div>
+				
+					<div class="col-3 process-wizard-step complete"><!-- complete -->
+						<div class="text-center process-wizard-stepnum">Step 2</div>
+						<div class="progress"><div class="progress-bar"></div></div>
+						<a href="#quote" class="process-wizard-dot"></a>
+						<div class="process-wizard-info text-center">Fill the Information to Get a Quote</div>
 					</div>
-					<a href="#services" class="process-wizard-dot"></a>
-					<div class="process-wizard-info text-center">Send the Form to Rocket Elevator's Sales Team</div>
-				</div>
-
-				<div class="col-3 process-wizard-step complete">
-					<!-- complete -->
-					<div class="text-center process-wizard-stepnum">Step 4</div>
-					<div class="progress">
-						<div class="progress-bar"></div>
+				
+					<div class="col-3 process-wizard-step complete"><!-- complete -->
+						<div class="text-center process-wizard-stepnum">Step 3</div>
+						<div class="progress"><div class="progress-bar"></div></div>
+						<a href="#services" class="process-wizard-dot"></a>
+						<div class="process-wizard-info text-center">Send the Form to Rocket Elevator's Sales Team</div>
 					</div>
-					<a href="#services" class="process-wizard-dot"></a>
-					<div class="process-wizard-info text-center">Start the Project after Reviewing the Details with our
-						<br> Engineering Team</div>
+				
+					<div class="col-3 process-wizard-step complete"><!-- complete -->
+						<div class="text-center process-wizard-stepnum">Step 4</div>
+						<div class="progress"><div class="progress-bar"></div></div>
+						<a href="#services" class="process-wizard-dot"></a>
+						<div class="process-wizard-info text-center">Start the Project after Reviewing the Details with our <br> Engineering Team</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		<!-- /STEPS -->
-
-		<!-- Quote Calc -->
-		<div class="container">
-			<div class="heading-title text-center">
-				<div class="card card-default col-sm-12">
-					<h3 id="type_build" class="card-heading card-heading-transparent mt-10">Type of Building</h3> <br>
-					<p>Please Specify the Type of Building to Obtain an Estimate</p><br>
-
+			</div>	
+			<!-- /STEPS -->			
+			
+			<!-- Quote Calc -->
+				<div class="container">
+					<div class="heading-title text-center">
+						<div class="card card-default col-sm-12">
+							<h3 id = "type_build" class="card-heading card-heading-transparent mt-10">Type of Building</h3> <br>
+							<p>Please Specify the Type of Building to Obtain an Estimate</p><br>
+							
 					<!-- Type of Building -->
 					<div class="button dropdown" class="text-center">
 						<select id="select_option">
-							<option>--- Select ---</option>
+							<option > --- Select ---</option>
 							<option value="residential">Residential</option>
 							<option value="commercial">Commercial</option>
 							<option value="corporate">Corporate</option>
@@ -130,12 +157,13 @@
 						</select>
 					</div> <br>
 					<!-- Type of Building -->
-					<div class="row">
-						<div class="col-md-12 col-sm-12">
+							
+							<div class="row">
+								<div class="col-md-12 col-sm-12">
 
-							<p>Please Select One of Our Product lines</p><br>
-
-							<!-- Product Line -->
+									<p>Please Select One of Our Product lines</p><br>									
+						
+									<!-- Product Line -->
 
 							<!-- Options -->
 							<div>
@@ -168,38 +196,45 @@
 							</div>
 							<!-- /Fee -->
 
-							<!-- Product Line -->
+									<!-- Product Line -->
 
-							
-							<hr>
+									<!-- Submit Button -->
+									<!-- <div class="button" class="row">
+										<div class="col-md-12">
+											<button  type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SUBMIT</button>
+										</div>
+									</div> -->
+									<!-- /Submit Button -->									
 
+									<hr>									
+								
 							<!-- Residential Form -->
 							<div id="showresidential" class="building_type"><br>
-								<form onsubmit="return false">
+								<form onsubmit="return false";>
 									<fieldset>
 										<legend>Residential Building</legend>
 										<div class="form-group row col-sm-12">
 											<label for="numApRes" class="col-sm-12 col-form-label">Number of
-												Apartments:</label>
+												Apartments*:</label>
 											<div class="col-sm-12">
-												<input id="numApRes" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="1">
+												<input id="numApRes" type="number" placeholder="0-10000" min="1"
+												class="form-control text-center" oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numFlRes" class="col-sm-12 col-form-label">Number of
-												Floors:</label>
+												Floors*:</label>
 											<div class="col-sm-12">
-												<input id="numFlRes" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="1">
+												<input id="numFlRes" type="number" placeholder="0-10000" min="1"
+												class="form-control text-center" oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numBaseRes" class="col-sm-12 col-form-label">Number of
-												Basements:</label>
+												Basements*:</label>
 											<div class="col-sm-12">
-												<input id="numBaseRes" type="number" placeholder="0-9" min="0"
-													class="form-control text-center" value="0">
+												<input id="numBaseRes" type="number" placeholder="0-10000" min="0"
+												class="form-control text-center" oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 
@@ -212,10 +247,19 @@
 										</div>
 										<!-- /Resid Form Button -->
 
+										<!-- Reset Form Button -->
+										<div id="residRestButton" class="row container">
+											<div class="col-md-12">
+												<button onclick="clear_Func(); init() " type="submit"
+													class="btn btn-danger"><i class="fa fa-check"></i> RESTART</button>
+											</div>
+										</div>
+										<!-- /Reset Form Button -->
+
 									</fieldset>
 								</form>
 							</div> <!-- /Residential Form -->
-
+		
 							<!-- Commercial Form -->
 							<div id="showcommercial" class="building_type">
 								<form onsubmit="return false">
@@ -225,55 +269,66 @@
 											<label for="numDistBusCom" class="col-sm-12 col-form-label">Number of
 												Distinct Businesses:</label>
 											<div class="col-sm-12">
-												<input id="numDistBusCom" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="1">
+												<input id="numDistBusCom" type="number" placeholder="0-10000" min="0"
+												class="form-control text-center" oninput="validity.valid||(value='');">
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numFlCom" class="col-sm-12 col-form-label">Number of
 												Floors:</label>
 											<div class="col-sm-12">
-												<input id="numFlCom" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="1">
+												<input id="numFlCom" type="number" placeholder="0-10000" min="0"
+												class="form-control text-center" oninput="validity.valid||(value='');">
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numBaseCom" class="col-sm-12 col-form-label">Number of
 												Basements:</label>
 											<div class="col-sm-12">
-												<input id="numBaseCom" type="number" placeholder="0-9" min="0"
-													class="form-control text-center" value="0">
+												<input id="numBaseCom" type="number" placeholder="0-10000" min="0"
+												class="form-control text-center" oninput="validity.valid||(value='');">
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numParkCom" class="col-sm-12 col-form-label">Number of Parking
 												Spaces Available:</label>
 											<div class="col-sm-12">
-												<input id="numParkCom" type="number" placeholder="0-9" min="0"
-													class="form-control text-center" value="0">
+												<input id="numParkCom" type="number" placeholder="0-10000" min="0"
+												class="form-control text-center" oninput="validity.valid||(value='');">
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numElevDep" class="col-sm-12 col-form-label">Number of Elevator
-												Cages to be Deployed:</label>
+												Cages to be Deployed*:</label>
 											<div class="col-sm-12">
 												<input id="numElevDep" placeholder="0-9" min="1"
-													class="form-control text-center" value="0" type="number" required>
+													class="form-control text-center" type="number" placeholder="0-10000" min="0"
+													oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 
-										<!-- Commercial Form Button -->
-										<div id="comButton" class="row">
+										<!-- Resid Form Button -->
+										<div id="comButton" class="row container">
 											<div class="col-md-12">
 												<button onclick="numElevCom(); product_Line_Selected()" type="submit"
 													class="btn btn-primary"><i class="fa fa-check"></i> SUBMIT</button>
 											</div>
 										</div>
-										<!-- /Commercial Form Button -->
+										<!-- /Resid Form Button -->
+
+										<!-- Reset Form Button -->
+										<div id="comRestButton" class="row container">
+											<div class="col-md-12">
+												<button onclick="clear_Func(); init() " type="submit"
+													class="btn btn-danger"><i class="fa fa-check"></i> RESTART</button>
+											</div>
+										</div>
+										<!-- /Reset Form Button -->
+
 									</fieldset>
 								</form>
 							</div> <!-- /Commercial Form -->
-
+			
 							<!-- Corporate Form -->
 							<div id="showcorporate" class="building_type">
 								<form onsubmit="return false">
@@ -281,58 +336,67 @@
 										<legend>Corporate Building</legend>
 										<div class="form-group row col-sm-12">
 											<label for="numDistBusCorp" class="col-sm-12 col-form-label">Number of
-												Separate Tenant Companies:</label>
+												Distinct Businesses:</label>
 											<div class="col-sm-12">
-												<input id="num_distBusCorp" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="0">
+												<input id="num_distBusCorp" type="number" placeholder="0-10000" min="0"
+												class="form-control text-center" oninput="validity.valid||(value='');">
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numFlCorp" class="col-sm-12 col-form-label">Number of
-												Floors:</label>
+												Floors*:</label>
 											<div class="col-sm-12">
-												<input id="numFlCorp" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="1">
+												<input id="numFlCorp" type="number" placeholder="0-10000" min="1"
+												class="form-control text-center" oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numBaseCorp" class="col-sm-12 col-form-label">Number of
-												Basements:</label>
+												Basements*:</label>
 											<div class="col-sm-12">
-												<input id="numBaseCorp" type="number" placeholder="0-9" min="0"
-													class="form-control text-center" value="0">
+												<input id="numBaseCorp" type="number" placeholder="0-10000" min="1"
+												class="form-control text-center" oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numParkCorp" class="col-sm-12 col-form-label">Number of Parking
 												Spaces Available:</label>
 											<div class="col-sm-12">
-												<input id="numParkCorp" type="number" placeholder="0-9" min="0"
-													class="form-control text-center" value="0">
+												<input id="numParkCorp" type="number" placeholder="0-10000" min="0"
+												class="form-control text-center" oninput="validity.valid||(value='');">
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numOccFlCorp" class="col-sm-12 col-form-label">Maximum Number of
-												Occupants per Floor:</label>
+												Occupants per Floor*:</label>
 											<div class="col-sm-12">
-												<input id="numOccFlCorp" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="0">
+												<input id="numOccFlCorp" type="number" placeholder="0-10000" min="1"
+												class="form-control text-center" oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 
-										<!-- Corporate Form Button -->
-										<div class="corpButton">
+										<!-- Resid Form Button -->
+										<div id="corpButton" class="row container">
 											<div class="col-md-12">
 												<button onclick="numElevCorp(); product_Line_Selected()" type="submit"
 													class="btn btn-primary"><i class="fa fa-check"></i> SUBMIT</button>
 											</div>
 										</div>
-										<!-- /Corporate Form Button -->
+										<!-- /Resid Form Button -->
+
+										<!-- Reset Form Button -->
+										<div id="corpRestButton" class="row container">
+											<div class="col-md-12">
+												<button onclick="clear_Func(); init() " type="submit"
+													class="btn btn-danger"><i class="fa fa-check"></i> RESTART</button>
+											</div>
+										</div>
+										<!-- /Reset Form Button -->
 
 									</fieldset>
 								</form>
 							</div> <!-- /Corporate Form -->
-
+			
 							<!-- Hybrid Form -->
 							<div id="showhybrid" class="building_type">
 								<form onsubmit="return false">
@@ -342,97 +406,106 @@
 											<label for="numDistBusHyb" class="col-sm-12 col-form-label">Number of
 												Distinct Businesses:</label>
 											<div class="col-sm-12">
-												<input id="numDistBusHyb" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="1">
+												<input id="numDistBusHyb" type="number" placeholder="0-10000" min="1"
+												class="form-control text-center" oninput="validity.valid||(value='');">
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numFlHyb" class="col-sm-12 col-form-label">Number of
-												Floors:</label>
+												Floors*:</label>
 											<div class="col-sm-12">
-												<input id="numFlHyb" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="1">
+												<input id="numFlHyb" type="number" placeholder="0-10000" min="1"
+												class="form-control text-center" oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numBaseHyb" class="col-sm-12 col-form-label">Number of
-												Basements:</label>
+												Basements*:</label>
 											<div class="col-sm-12">
-												<input id="numBaseHyb" type="number" placeholder="0-9" min="0"
-													class="form-control text-center" value="0">
+												<input id="numBaseHyb" type="number" placeholder="0-10000" min="1"
+												class="form-control text-center" oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numParkHyb" class="col-sm-12 col-form-label">Number of Parking
 												Spaces Available:</label>
 											<div class="col-sm-12">
-												<input id="numParkHyb" type="number" placeholder="0-9" min="0"
-													class="form-control text-center" value="0">
+												<input id="numParkHyb" type="number" placeholder="0-10000" min="0"
+												class="form-control text-center" oninput="validity.valid||(value='');">
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numOccFlHyb" class="col-sm-12 col-form-label">Maximum Number of
-												Occupants per Floor:</label>
+												Occupants per Floor*:</label>
 											<div class="col-sm-12">
-												<input id="numOccFlHyb" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="0">
+												<input id="numOccFlHyb" type="number" placeholder="0-10000" min="1"
+												class="form-control text-center" oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 										<div class="form-group row col-sm-12">
 											<label for="numHrActHyb" class="col-sm-12 col-form-label">Number of Hours of
-												Activity of the Building:</label>
+												Activity of the Building*:</label>
 											<div class="col-sm-12">
-												<input id="numHrActHyb" type="number" placeholder="0-9" min="1"
-													class="form-control text-center" value="0">
+												<input id="numHrActHyb" type="number" placeholder="0-24" min="1" max="24"
+												class="form-control text-center" oninput="validity.valid||(value='');" required>
 											</div>
 										</div>
 
-										<!-- Hybrid Form Button-->
-										<div id="hybridButton" class="row">
+										<!-- Resid Form Button -->
+										<div id="hybridButton" class="row container">
 											<div class="col-md-12">
 												<button onclick="numElevHyb(); product_Line_Selected()" type="submit"
 													class="btn btn-primary"><i class="fa fa-check"></i> SUBMIT</button>
 											</div>
 										</div>
-										<!-- /Hybrid Form Button-->
+										<!-- /Resid Form Button -->
+
+										<!-- Reset Form Button -->
+										<div id="hybridRestButton" class="row container">
+											<div class="col-md-12">
+												<button onclick="clear_Func(); init() " type="submit"
+													class="btn btn-danger"><i class="fa fa-check"></i> RESTART</button>
+											</div>
+										</div>
+										<!-- /Reset Form Button -->
 
 									</fieldset>
 								</form>
-							</div> <!-- /Hybrid Form -->
-						</div>
-					</div>
+							</div> <!-- /Hybrid Form -->								
+								</div>
+							</div>
 
 					<!-- Calculation Results-->
 					<table class="table fs-20 m-0">
 						<tbody>
 							<tr>
 								<td class="b-0 p-3">Number of Elevators Required:</td>
-								<td class="b-0 p-3 text-left text-black fw-400" type="number" class="res1"><span
+								<td class="b-0 p-3 text-left text-black fw-400" type="number" class="res1" min="0"><span
 										id="numElevReq">0<span></td>
 							</tr>
 							<tr>
 								<td class="b-0 p-3">Price of the Equipments:</td>
 								<td class="b-0 p-3 text-left text-black fw-400"><span id="priceElev"
-										class="res2">0.00<span></td>
+										class="res2" min="0">0.00<span></td>
 							</tr>
 							<tr>
 								<td class="b-0 p-3">Estimated Cost of Installation:</td>
 								<td class="b-0 p-3 text-left text-black fw-400"><span id="estCostInst"
-										class="res3">0.00</span></td>
+										class="res3" min="0">0.00</span></td>
 							</tr>
 							<tr>
 								<td class="b-0 p-3">Estimated Budget:</td>
 								<td class="b-0 p-3 text-left text-black fw-400"><span id="est_Bud"
-										class="res4">0.00</span></td>
+										class="res4" min="0">0.00</span></td>
 							</tr>
 						</tbody>
 					</table>
-					<!-- /Calculation Results-->
-
+					<!-- /Calculation Results-->	
+																
+						</div>						
+					</div>
 				</div>
-			</div>
-		</div>
-		<!-- /Quote Calc -->
+			<!-- /Quote Calc -->
 
 		<!-- FORM -->
 		<div id="quote" class="container">
@@ -540,143 +613,119 @@
 		</div>
 		<!-- /FORM -->
 
-		<!-- CONTACT -->
-		<section id="contact">
-			<div class="container">
+			<!-- CONTACT -->
+			<section id="contact">
+				<div class="container">
 
-				<header class="text-center mb-60">
-					<div class="col-md-12 col-sm-12">
-						<div id="map2" class="h-400"><iframe width="1000" height="400" frameborder="0" scrolling="no"
-								marginheight="0" marginwidth="0" id="gmap_canvas"
-								src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=4468%20Wellington%20St,%20Suite%20204%20Verdun+(Rocket%20Elevators)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-							<a href='https://www.add-map.net/'>add google map to website</a>
-							<script type='text/javascript'
-								src='https://maps-generator.com/google-maps-authorization/script.js?id=58fb0d8e6d212e016ffebc34e3382e165afaed2d'>
-							</script>
-						</div>
-						<br>
+					<header class="text-center mb-60"> 
+						<div class="col-md-12 col-sm-12">
+			  				<div id="map2" class="h-400"><iframe width="1000" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+							src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=4468%20Wellington%20St,%20Suite%20204%20Verdun+(Rocket%20Elevators)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.add-map.net/'>add google map to website</a> <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=58fb0d8e6d212e016ffebc34e3382e165afaed2d'></script></div>
+						  <br>
 						<div class="col-md-12 col-sm-12">
 							<p>
-								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468
-									Wellington St Suite 204, Verdun, Quebec H4G 1W5</span>
-								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a
-										href="tel:1800-555-1234">(581) 701-0303</a></span>
-								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a
-										href="mailto:mail@yourdomain.com">info@codeboxx.biz</a></span>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468 Wellington St Suite 204, Verdun, Quebec H4G 1W5</span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">(581) 701-0303</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">info@codeboxx.biz</a></span>
 							</p>
 						</div>
-				</header>
+					</header>
 
-				<div class="row">
+					<div class="row">
 
-					<!-- INFO -->
-					<div class="col-md-4 col-sm-4">
+						<!-- INFO -->
+						<div class="col-md-4 col-sm-4">
 						<!-- /INFO -->
 
 					</div>
 				</div>
-		</section>
-		<!-- /CONTACT -->
+			</section>
+			<!-- /CONTACT -->
 
-		<!-- FOOTER -->
-		<footer id="footer">
-			<div class="container">
-				<div class="row">
-
-					<!-- col #1 -->
-					<div class="col-md-8">
-						<h2 class="letter-spacing-1">Looking for a rewarding career?</h2>
-
-						<!-- Small Description -->
-						<p>
-							If you are looking for a rewarding, meaningful career, send us your CV!!!
-							<h3 class="letter-spacing-1">Follow us on social media!</h3>
-						</p>
-					</div>
-					<!-- /col #1 -->
-
-					<!-- col #2 -->
-					<div class="col-md-4">
-						<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-						<!-- Newsletter Form -->
-						<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-						<form class="validate" action="php/newsletter.php" method="post"
-							data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-								<input type="email" id="email" name="email" class="form-control required"
-									placeholder="Enter your Email">
-								<span class="input-group-btn">
-									<button class="btn btn-primary" type="submit">Subscribe</button>
-								</span>
-							</div>
-						</form>
-						<!-- /Newsletter Form -->
-
-					</div>
-					<!-- /col #2 -->
-					<ul class="float-right m-0 list-inline mobile-block">
-						<li><a href="https://www.facebook.com" title="Facebook" target="_new"><img
-									src="assets/images/icons8-facebook-48.png" alt="Facebook" title="Facebook"
-									height="24px" width="24px"></a></li>
-						<li><a href="https://twitter.com" title="Twitter" target="_new"><img
-									src="assets/images/icons8-twitter-squared-120.png" alt="Twitter" title="Twitter"
-									height="34px" width="34px"></a></li>
-						<li><a href="https://www.instagram.com" title="Instagram" target="_new"><img
-									src="assets/images/icons8-instagram-24.png" alt="Instagram" height="34px"
-									width="34px"></a></li>
-						<li><a href="https://www.linkedin.com" title="LinkedIn" target="_new"><img
-									src="assets/images/icons8-linkedin-2-32.png" alt="LinkedIn" height="34px"
-									width="34px"></a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="copyright">
+			<!-- FOOTER -->
+			<footer id="footer">
 				<div class="container">
-					&copy; All Rights Reserved, Rocket Elevators inc.
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+							<h2 class="letter-spacing-1">Looking for a rewarding career?</h2>
+
+							<!-- Small Description -->
+							<p>
+								If you are looking for a rewarding, meaningful career, send us your CV!!! 
+								<h3 class="letter-spacing-1">Follow us on social media!</h3> 
+							</p>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-primary" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+						</div>
+						<!-- /col #2 -->
+						<ul class="float-right m-0 list-inline mobile-block">	
+							<li><a href="https://www.facebook.com" title="Facebook" target="_new"><img src="assets/images/icons8-facebook-48.png" alt="Facebook" title="Facebook" height="24px" width="24px"></a></li>
+							<li><a href="https://twitter.com" title="Twitter" target="_new"><img src="assets/images/icons8-twitter-squared-120.png" alt="Twitter" title="Twitter" height="34px" width="34px"></a></li>
+							<li><a href="https://www.instagram.com" title="Instagram" target="_new"><img src="assets/images/icons8-instagram-24.png" alt="Instagram" height="34px" width="34px"></a></li>
+							<li><a href="https://www.linkedin.com" title="LinkedIn" target="_new"><img src="assets/images/icons8-linkedin-2-32.png" alt="LinkedIn" height="34px" width="34px"></a></li>
+							</ul>
+					</div>
 				</div>
-			</div>
 
-		</footer>
-		<!-- /FOOTER -->
+				<div class="copyright">
+					<div class="container">
+						&copy; All Rights Reserved, Rocket Elevators inc.
+					</div>
+				</div>
 
-	</div>
-	<!-- /wrapper -->
+			</footer>
+			<!-- /FOOTER -->
 
-	<!-- SCROLL TO TOP -->
-	<a href="#" id="toTop"></a>
-
-
-	<!-- PRELOADER -->
-	<div id="preloader">
-		<div class="inner">
-			<span class="loader"></span>
 		</div>
-	</div><!-- /PRELOADER -->
+		<!-- /wrapper -->
 
-	<!-- JAVASCRIPT FILES -->
-	<script>
-		var plugin_path = 'assets/plugins/';
-	</script>
-	<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script>
-		window.addEventListener('wheel', {
-			passive: false
-		})
-	</script>
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
 
-	<script src="assets/js/scripts.js"></script>
-	<script src="assets/js/quote.js"></script>
 
-	<!-- PAGELEVEL SCRIPTS -->
-	<script src="assets/js/contact.js"></script>
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
 
-	</script>
-</body>
-<!-- /Body  -->
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
+		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/quote.js"></script>
+		<!-- <script>window.addEventListener('wheel', { passive: false })</script>  -->
+
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script src="assets/js/contact.js"></script>
+
+		<script>
+
+ 		</script>
+	</body>
 </html>
