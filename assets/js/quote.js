@@ -9,8 +9,8 @@ function init() {
             var selected = $(this).val();
             $('div.building_type').hide();
             $('#show'+selected).show();
-            });
         });
+    });
                
     // Radio Buttons Hide/Show Unit Prices
     $(document).ready(function(){
@@ -22,23 +22,23 @@ function init() {
             $(targetBox).show();
         });
     });
-    document.getElementById('numElevReq').textContent = '0';
-    document.getElementById('priceElev').textContent = '0';
-    document.getElementById('estCostInst').textContent = '0';
-    document.getElementById('est_Bud').textContent = '0';
+// document.getElementById('numElevReq').textContent = '0';
+// document.getElementById('priceElev').textContent = '0';
+// document.getElementById('estCostInst').textContent = '0';
+// document.getElementById('est_Bud').textContent = '0';
 };
 
 
-function restart() {
+// function restart() {
 
-var num_Elev_Req = 0;
-var price_Inst = 0;
-var tot_Price = 0;
-$("#numElevReq").text(num_Elev_Req);
-$("#feeCost").text(formatter.format(price_Inst));
-$("#calculatedTotalPrice").text(formatter.format(tot_Price));	
+// var num_Elev_Req = 0;
+// var price_Inst = 0;
+// var tot_Price = 0;
+// $("#numElevReq").text(num_Elev_Req);
+// $("#feeCost").text(formatter.format(price_Inst));
+// $("#calculatedTotalPrice").text(formatter.format(tot_Price));	
 
-};
+// };
 
 // restart($("#select_option").each (function(){
 //     this.reset();
@@ -277,7 +277,7 @@ var prem_Price_Tot = function () {
 //  Excellium Line
 // ---------------------------------------------------------------------------------------------------------------
 
-var excl_Price_tot = function () {
+var excl_Price_Tot = function () {
 
     // Calculation
     pr_Elev = num_Elev_Req * excl_Price;
@@ -306,7 +306,6 @@ var product_Line_Selected = function () {
     if ($("#std_line").is(':checked')) { 
         $("#priceElev").text(formatter.format(std_Price)); 	
         std_Price_Tot();
-
     }
     else if ($("#premium_line").is(':checked')) { 
         $("#priceElev").text(formatter.format(prem_Price));
@@ -314,7 +313,7 @@ var product_Line_Selected = function () {
     }
     else {
         $("#priceElev").text(formatter.format(excl_Price));
-        excl_Price_tot();
+        excl_Price_Tot();
     }
 };
 
